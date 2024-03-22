@@ -10,48 +10,48 @@ function App() {
   return (
     <main id="main">
       <div className="leftPort">
-        <ImageProfile image="/src/assets/react.svg" />
+        <ImageProfile image="/src/assets/B016.jpeg" />
 
-        <Title title="Thanadet Kaewsri (Matt)">
-          <h3>ตำแหน่ง : Frontend</h3>
+        <Title title="ประวัติส่วนตัว">
+
+
+          <p>ชื่อ จักรพงศ์ ออกกิจวัตร</p>
+          <p>ชื่อเล่น บอส</p>
+          <p>อายุ 21 ปี</p>
+          <p>วันเกิด {moment("2003/01/22").format("D MMM YYYY")}</p>
+
         </Title>
 
-        <Title title="Contact">
-     
-          <p>วันที่ปัจจุบัน: {moment().format("D MMM YYYY")}</p>
-          <p>วันเกิด: {moment("1994/07/01").format("D MMM YYYY")}</p>
-          <p style={{ display: hide ? 'none': 'block'}} >
-            Tel : +66877543002
-          </p>
-          <button onClick={() => setHide(!hide)}>
-            {hide ? 'Show': 'Hide'}
-          </button>
-          <p>Email : mattssru@gmail.com</p>
-          <p>www.mattssru@gmail.com</p>
+        <Title title="ช่องทางติดต่อ">
+          <p>เบอร์โทร  080-786-3878</p>
+          <p>LineID - jakkapong.boss7</p> 
+          <p>Facebook - Jakkapong Boss</p> 
+          <p>Email - s64122202016@ssru.ac.th </p> 
         </Title>
-    
-        <Title title="Education">
-          <p>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ</p>
-          <p>มหาวิทยาลัยราชภัฏสวนสุนันทา</p> 
-        </Title>
+
+        <button onclick="window.location.href='#'">ดูเพิ่มเติม</button>
+
+
+
       </div>
 
       <div className="rightPort">
-        <Title title="Profile">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas natus soluta debitis nihil placeat, molestiae quae distinctio. Corporis dolores sit similique vitae dignissimos rerum saepe dolorem laboriosam rem impedit.</p>
+      <Title title="การศึกษา">
+          <p>กำลังศึกษา ปริญญาตรีชั้นปีที่ 3 ที่ มหาวิทยาลัยราชภัฎสวนสุนนันทา คณะวิทยาศาสตร์และเทคโนโลยี สาขาเทคโนโลยีสารสนเทศ </p>
         </Title>
 
-        <Title title="Work Experience">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis eligendi cumque, laborum dolore error at, excepturi eum distinctio iste facere obcaecati natus impedit eaque eveniet nulla? Cupiditate, blanditiis in?</p>
+        <Title title="เกรดเฉลี่ย">
+          <p>GPA เกรดเฉลี่ยสะสม 3.60</p>
         </Title>
 
-        <Title title="Skills">
-          <p>HTML / CSS / JS</p>
-          <p>React.js</p>
-          <p>Next.js</p>
-          <p>Vue.js</p>
-          <p>Git</p>
+        <Title title="ทักษะความสมารถ">
+          <p>มีความคิดสร้างสรรค์ในการออกแบบงาน </p>
+          <p>แต่งรูป , ตัดต่อวิดีโอ</p>
+          <p>ออกแบบงานโฆษณาสินค้า</p>
+          <p>ทักษะภาษาอังกฤษพื้นฐาน</p>
+
         </Title>
+        <button onclick="window.location.href='#'">ดูเพิ่มเติม</button>
       </div>
     </main>
   )
